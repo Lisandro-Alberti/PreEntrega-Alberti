@@ -1,16 +1,14 @@
-
 function comprarEntrada(dinero){
     const precioEntrada = 200
 
-if(dinero > precioEntrada){
-    let cambio = dinero - precioEntrada
-    return "compra exitosa, tu vuelto es: $" + cambio
-}else if(dinero < precioEntrada){
-    let dineroFaltante = precioEntrada - dinero
-    return "No alcanzó, te falta: $" + dineroFaltante
-}else{
-    return "Gracias por tu compra" 
+    if(dinero > precioEntrada){
+        let vuelto = dinero - precioEntrada
+        return "Gracias por tu compra, tu vuelto es: $" + vuelto
+    }else if(dinero == precioEntrada){
+        return "Gracias por tu compra"
+    }else{
+        let dineroFaltante = precioEntrada - dinero
+        return "Error, te falta dinero: $" + dineroFaltante
+    }
 }
-}
-
-console.log(comprarEntrada(200))
+console.log(comprarEntrada())
