@@ -1,14 +1,18 @@
-function comprarEntrada(dinero){
-    const precioEntrada = 200
+let resolver = true 
+let intentos = 1
 
-    if(dinero > precioEntrada){
-        let vuelto = dinero - precioEntrada
-        return "Gracias por tu compra, tu vuelto es: $" + vuelto
-    }else if(dinero == precioEntrada){
-        return "Gracias por tu compra"
+do{
+    let usuario = parseInt (prompt("¿Cúal es el resultado de 8 * 9? (solo 3 intentos)"))
+    if(usuario === 72 && intentos <= 3){
+        alert ("Correcto, el resultado es 72")
+        resolver = false
+        break
     }else{
-        let dineroFaltante = precioEntrada - dinero
-        return "Error, te falta dinero: $" + dineroFaltante
+        alert ("Resultado equivocado, intente de nuevo")
+        intentos++
+        if(intentos > 3){
+            alert ("Lo siento, ya no hay mas intentos")
+            break
+        }
     }
-}
-console.log(comprarEntrada())
+}while(resolver = true)
