@@ -1,0 +1,18 @@
+.navbar{
+    background-color: aqua;
+    height: 10vh;
+}
+.navbar h2{
+    font-size: 35px;
+}
+.contenedor{
+    display: inline;
+
+}
+.intro{
+    padding: 20px 30px;
+    font-size: 25px;
+    background-color: burlywood;
+    margin-top: 10px;
+    justify-content: center;
+}
